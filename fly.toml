@@ -25,3 +25,7 @@ primary_region = 'ams'
 
 [[vm]]
   size = 'shared-cpu-1x'
+
+[[mounts]]
+  source = 'test'
+  destination = '/data'

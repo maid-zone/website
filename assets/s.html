@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maid.zone</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div style="position: fixed; top: 0; background-color: var(--primary); width: 100%;"></div>
+        <h1><a href="/">maid.zone</a></h1>
+    </div>
+
+    <p id="title">link shortener</p>
+    <h2>turn a normal link into a customizable maid.zone/s/link</h2>
+
+    <div style="display: flex; justify-content: center; height: 5rem;">
+        <div style="display: flex; margin-right: 1rem; align-items: center"><input id="url" placeholder="https://example.com" type="text" style="height: 1.5rem; font-size: 1.5rem"></div>
+        <div style="display: flex; align-items: center;"><p style="font-size: 1.5rem">-></p></div>
+        <div style="display: flex; margin-left: 1rem; align-items: center;">
+            <p style="font-size: 1.5rem">https://maid.zone/s/</p><input id="slug" placeholder="slug" type="text" style="height: 1.5rem; font-size: 1.5rem;">
+        </div>
+    </div>
+
+    <button style="font-size: 2rem;" onclick="shorten()">shorten!</button>
+    <br>
+
+    <div style="display: flex; justify-content: center; height: 5rem;">
+        <div style="display: flex; margin-right: 1rem; align-items: center;  width: 17.5rem;"><input disabled id="out" style="height: 1.5rem; font-size: 1.5rem; width: 17.5rem;"></div>
+        <div style="display: flex; margin-left: 1rem; align-items: center;">
+            <button style="font-size: 1.25rem;" onclick="copyOutput()">copy</button>
+        </div>
+    </div>
+
+    <script src="/s.js"></script>
+</body>
+
+</html>

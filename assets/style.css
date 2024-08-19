@@ -3,18 +3,33 @@
     src: url("https://assets.maid.zone/fixed.ttf");
 }
 
+:root {
+    /* github.com/material-ocean */
+    --accent: #ff4151;
+    --primary: #0f111a;
+    --secondary: #00010a;
+    --0: #3b4252;
+    --text: white;
+}
+
+* {
+    font-family: "fixed" !important;
+}
+
 body {
     font-family: "fixed" !important;
     text-align: center;
-    background-color: #0f111a;
-}
-
-h1, h2, h3, p {
-    color: white;
+    background-color: var(--primary);
+    color: var(--text);
 }
 
 a {
-    color: #ff4151 !important;
+    color: var(--accent);
+    text-decoration: underline dashed;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .member {
@@ -54,4 +69,34 @@ a {
     h1, h2, h3, #title, #members-title {
         font-weight: normal !important;
     }
+}
+
+input {
+    background-color: var(--secondary);
+    color: var(--text);
+    border-color: var(--0);
+    border-style: solid;
+}
+
+input:focus {
+    border-color: var(--accent);
+    border-style: solid;
+    outline: none;
+}
+
+button {
+    background-color: var(--secondary);
+    color: var(--text);
+    border-color: var(--0);
+    border-style: solid;
+}
+
+button:hover, button:focus {
+    border-color: var(--accent);
+    border-style: solid;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
