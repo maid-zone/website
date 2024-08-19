@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "fixed";
+    src: url("https://assets.maid.zone/fixed.ttf");
+}
+
+body {
+    font-family: "fixed" !important;
+    text-align: center;
+    background-color: #0f111a;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+a {
+    color: #ff4151 !important;
+}
+
+.member {
+    display: flex;
+}
+
+.member > img {
+    height: 10rem;
+    margin: 1rem;
+}
+
+.member > div > h3 {
+    margin-top: 0.1rem;
+}
+
+.member > div > h1 {
+    margin-bottom: 0.1rem;
+}
+
+.member > div {
+    text-align: left;
+}
+
+#title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#members-title {
+    font-size: 3rem;
+    font-weight: bold; 
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    h1, h2, h3, #title, #members-title {
+        font-weight: normal !important;
+    }
+}
