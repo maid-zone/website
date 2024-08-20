@@ -100,3 +100,11 @@ button:hover, button:focus {
 button:hover {
     cursor: pointer;
 }
+
+#top {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color: var(--primary);
+    width: 100%;   
+}
