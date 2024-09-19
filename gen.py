@@ -19,6 +19,8 @@ who is here:
     owner
 - [#ff4151][link=https://delta.maid.zone]deltaost[/link][/#ff4151]
     member
+- [#ff4151][link=https://jns.gg]jonas[/link][/#ff4151]
+    member
 """)
 
 with open("out.ans", "w") as file:
