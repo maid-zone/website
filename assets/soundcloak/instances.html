@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instances ~ soundcloak</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        #list > div {
+            padding: 1rem;
+            margin: 1rem;
+            max-width: 15rem;
+            outline: white dashed .1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <h1><a href="/">maid.zone</a></h1>
+    </div>
+
+    <p id="title">soundcloak</p>
+    <h2>list of public <a href="https://github.com/maid-zone/soundcloak">soundcloak</a> instances</h2>
+
+    <div style="display: grid; justify-content: center;" id="list">
+    </div>
+
+    <script>
+        function E(tag, props) {
+            let children;
+            if (props) {
+                children = props.children
+                delete props.children
+            }
+            const element = Object.assign(document.createElement(tag), props)
+
+            if (children) {
+                children.forEach(child => element.append(child))
+            }
+            return element
+        }
+
+        const list = document.getElementById("list")
+        fetch("/soundcloak/instances.json").then(a => a.json()).then(a => list.append(...a.map(inst => {
+            let children = [E("h1", {children: [E("a", {href: inst.link, textContent: inst.link.split("://")[1]})]})]
+            if (inst.info) {
+                children.push(E("a", {href: inst.info, textContent: "Instance information"}))
+            }
+
+            return E("div", {children})
+        })))
+    </script>
+</body>
+
+</html>

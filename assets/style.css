@@ -53,22 +53,20 @@ a:hover {
     text-align: left;
 }
 
+h1, h2, h3 {
+    font-weight: normal;
+}
+
 #title {
     font-size: 4.5rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 1rem;
 }
 
 #members-title {
     font-size: 3rem;
-    font-weight: bold; 
+    font-weight: normal; 
     margin-bottom: 1rem;
-}
-
-@media only screen and (max-width: 768px) {
-    h1, h2, h3, #title, #members-title {
-        font-weight: normal !important;
-    }
 }
 
 input {
