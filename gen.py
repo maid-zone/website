@@ -19,7 +19,7 @@ who is here:
     owner
 - [#ff4151][link=https://delta.maid.zone]deltaost[/link][/#ff4151]
     member
-- [#ff4151][link=https://jns.gg]jonas[/link][/#ff4151]
+- [#ff4151][link=https://jonas.zone]jonas[/link][/#ff4151]
     member
 """)
 
