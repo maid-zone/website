@@ -106,3 +106,14 @@ button:hover {
     background-color: var(--primary);
     width: 100%;   
 }
+
+.image {
+    position: fixed;
+    bottom: -5px;
+}
+
+@media screen and (max-device-width: 640px) {
+    .image {
+        display: none;
+    }
+}
