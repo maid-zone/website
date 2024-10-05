@@ -112,7 +112,7 @@ button:hover {
     bottom: -5px;
 }
 
-@media screen and (max-device-width: 640px) {
+@media screen and (max-width: 640px) {
     .image {
         display: none;
     }
