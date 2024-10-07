@@ -3,5 +3,9 @@
         "type": "clearnet",
         "link": "https://sc.maid.zone",
         "info": "https://github.com/maid-zone/sc.maid.zone"
+    },
+    {
+        "type": "clearnet",
+        "link": "https://tunes.floppa.nl"
     }
 ]
