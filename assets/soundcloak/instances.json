@@ -6,6 +6,7 @@
     },
     {
         "type": "clearnet",
-        "link": "https://tunes.floppa.nl"
+        "link": "https://tunes.floppa.nl",
+        "info": "https://github.com/idkjonas/tunes.floppa.nl"
     }
 ]
