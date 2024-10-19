@@ -5,13 +5,11 @@
 
 app = 'maid'
 primary_region = 'ams'
+swap_size_mb = 512
 
 [build]
-  builder = 'paketobuildpacks/builder:base'
-  buildpacks = ['gcr.io/paketo-buildpacks/go']
-
   [build.args]
-    BP_KEEP_FILES = 'assets/*'
+    GO_VERSION = '1.21.3'
 
 [env]
   PORT = '4664'
@@ -26,6 +24,6 @@ primary_region = 'ams'
 [[vm]]
   size = 'shared-cpu-1x'
 
-[[mounts]]
-  source = 'test'
-  destination = '/data'
+#[[mounts]]
+#  source = 'test'
+#  destination = '/data'
