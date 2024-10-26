@@ -8,5 +8,10 @@
         "type": "clearnet",
         "link": "https://tunes.floppa.nl",
         "info": "https://github.com/idkjonas/tunes.floppa.nl"
+    },
+    {
+        "type": "clearnet",
+        "link": "https://sc.bloat.cat",
+        "info": "https://bloat.cat/about/"
     }
 ]
