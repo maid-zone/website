@@ -1,6 +1,6 @@
 @font-face {
     font-family: "fixed";
-    src: url("https://assets.maid.zone/fixed.ttf");
+    src: url("/fixed.ttf");
 }
 
 :root {
