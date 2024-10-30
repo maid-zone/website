@@ -13,5 +13,9 @@
         "type": "clearnet",
         "link": "https://sc.bloat.cat",
         "info": "https://bloat.cat/about/"
+    },
+    {
+        "type": "clearnet",
+        "link": "https://soundcloak.fly.dev"
     }
 ]
