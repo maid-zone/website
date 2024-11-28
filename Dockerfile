@@ -11,8 +11,8 @@ RUN go build -v -o /run-app .
 FROM debian:bookworm
 
 COPY --from=builder /run-app /usr/local/bin/
-COPY assets assets
-RUN apt update 
-RUN apt install -y tor
+#COPY assets assets
+#RUN apt update 
+#RUN apt install -y tor
 #CMD tor &
 CMD ["run-app"]
